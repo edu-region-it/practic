@@ -15,22 +15,31 @@ sup {
     padding: 0;
 }
 
+
+/*User picture*/
+
 .container>.nav {
-    margin-top: -120px;
-    position: relative;
+    margin-top: -32px;
 }
 
 .nav .glyphicon {
-    margin-top: 80px;
+    position: relative;
+    top: -5px;
+    right: 30px;
     font-size: 24px;
     color: #fff;
 }
 
-.nav img {
+.user-profile-picture {
+    margin-top: -20px;
+    position: relative;
+}
+
+.user-profile-picture img {
     width: 90px;
     height: 90px;
     border: 3px solid #fff;
-    margin-top: -80px;
+    margin-top: -100px;
 }
 
 .circle {
@@ -40,10 +49,14 @@ sup {
     height: 14px;
     background-color: #ccc;
     position: absolute;
-    left: 66px;
-    bottom: -2px;
-    /* width and height can be anything, as long as they're equal */
+    left: 38px;
+    bottom: 9px;
 }
+
+
+/*
+ * Navigation
+ */
 
 .navbar {
     border: none;
@@ -116,6 +129,12 @@ sup {
     margin: 0;
 }
 
+
+/*
+ *  The сentral part of the site
+ *  Content
+ */
+
 .content {
     height: 1076px;
     background: #595959 url(../img/body.png) 50% 50% no-repeat;
@@ -148,7 +167,7 @@ sup {
 }
 
 
-/*form*/
+/*form Login*/
 
 input {
     padding: 10px;
@@ -171,7 +190,7 @@ input:focus {
     color: #ccc;
 }
 
-.btn-default {
+.btn {
     margin: 40px 0;
     padding: 10px 100px;
     color: #fff;
@@ -180,9 +199,9 @@ input:focus {
     border-color: #777;
 }
 
-.btn-default:hover,
-.btn-default:active,
-.btn-default:visited {
+.btn:hover,
+.btn:active,
+.btn:visited {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.7);
 }
@@ -218,7 +237,12 @@ input:focus {
     margin: 0 15px 40px 15px;
 }
 
+.after-vertical-line:after {
+    content: "|";
+    padding: 0 5px;
+}
+
 .navbar-text a {
-    list-style-type: none;
+    text-decoration: none;
     color: #fff;
 }
